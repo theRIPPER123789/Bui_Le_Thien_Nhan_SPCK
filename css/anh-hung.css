@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background-color: #181C14;
+  font-family: 'Merriweather', serif;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* Logo  */
+.logo {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #8C1007;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 10px #8C1007;
+}
+ul{
+  margin-bottom: 0;
+}
+/* Navigation bar  */
+.navbar {
+    background-color: #181C14;
+    padding: 1rem 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    position: sticky;
+    top: 0px;
+    z-index: 99999;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0 1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #8C1007 !important;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #8C1007;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.btn {
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #181C14;
+}
+
+.btn-warning:hover {
+    background-color: #8C1007   ;
+}
+
+
+/* Hero banner */
+.hero {
+    position: relative;
+    height: 320px;
+    background: url('../img/Điệu\ biên\ phủ.png')
+        center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f7d88c;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.hero h1,
+.hero p {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 52px;
+    font-weight: bold;
+    text-shadow: 0 0 10px black;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* HERO SECTION  */
+.heroes {
+    margin-top: 60px;
+    text-align: center;
+}
+.heroes h2 {
+    font-family: 'Cinzel', serif;
+    color: #FFD700;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+}
+.hero-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+.hero-card {
+    background: #111;
+    border: 2px solid #E50914;
+    border-radius: 12px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 15px #E5091444;
+    transition: 0.3s;
+}
+
+.hero-card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 25px #E50914aa;
+}
+.hero-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-bottom: 2px solid #E50914;
+    border-radius: 10px 10px 0 0;
+}
+.hero-card h3 {
+    margin: 15px 0 10px;
+    color: #FFD700;
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+}
+.hero-card p {
+    padding: 0 15px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+.hero-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background-color: #E50914;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.hero-btn:hover {
+    background-color: #ff1e1e;
+    box-shadow: 0 0 10px #ff1e1e;
+}
+
+
+/* footer */
+.white-section {
+  background-color: #181C14;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Merriweather', 'Times New Roman', serif;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-buttons .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: #b91c1c;
+  color: #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.social-buttons .btn:hover {
+  background-color: #ef4444;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(185, 28, 28, 0.4);
+}
+
+.copy-right {
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.copy-right a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+.copy-right a:hover {
+  text-decoration: underline;
+}
+
+/* REPONSIVE  */
+.container {
+  max-width: 100%;
+  padding: 0 15px;
+}
+
+body {
+  font-size: 16px;
+}

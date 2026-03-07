@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dấu Ấn Độc Lập</title>
+    <!-- Font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font gg cdn  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Sedgwick+Ave&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Main css  -->
+    <link rel="stylesheet" href="./css/tu-lieu.css">
+</head>
+
+<body>
+    <!-- HEADER  -->
+    <header>
+        <!-- Navigation bar  -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="./index.html">
+                    <img src="./img/logo.png" alt="logo" class="logo me-2">
+                </a>
+
+                <!-- Nút toggle cho mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu chính -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./Khang-chien.html">Các cuộc kháng chiến</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./anh-hung.html">Anh hùng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tu-lieu.html">Tư liệu</a>
+                        </li>
+                    </ul>
+
+                    <!-- Nút đăng nhập / đăng ký -->
+                    <div class="d-flex">
+                        <a href="./login.html" class="btn btn-outline-light me-3 px-4">Đăng nhập</a>
+                        <a href="./register.html" class="btn btn-danger text-dark fw-bold px-4">Đăng ký</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="overlay"></div>
+            <h1>Những Anh Hùng Dân Tộc</h1>
+            <p>Những con người đã viết nên trang sử bất diệt của đất nước.</p>
+        </div>
+    </header>
+
+    <!-- COMING SOON -->
+    <div class="content-wrapper">
+        <div class="coming-soon-box">
+            <div class="coming-soon-icon">
+                <i class="fa-solid fa-hourglass-half"></i>
+            </div>
+            <h2 class="coming-soon-title">Sắp Ra Mắt</h2>
+            <p class="coming-soon-text">
+                Chúng tôi đang nỗ lực số hóa và tổng hợp hàng ngàn tư liệu quý giá về lịch sử Việt Nam. <br>
+                Tính năng này sẽ sớm được hoàn thiện để phục vụ bạn.
+            </p>
+
+            <form class="notify-form">
+                <input type="email" class="notify-input" placeholder="Nhập email để nhận thông báo..." required>
+                <button type="submit" class="notify-btn">Thông báo tôi</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer  -->
+    <footer class="white-section">
+        <div class="social-buttons">
+            <a href="https://x.com/" class="btn"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.facebook.com/?locale=vi_VN" class="btn"><i
+                    class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/accounts/login/" class="btn"><i
+                    class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://workspace.google.com/intl/vi/gmail/" class="btn"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p class="copy-right">
+            &copy; Copyright from
+            <a href="mailto:builethiennhan@gmail.com">builethiennhan@gmail.com</a>
+        </p>
+    </footer>
+
+
+    <!-- Bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
