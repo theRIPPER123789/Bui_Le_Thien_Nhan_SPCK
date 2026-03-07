@@ -75,189 +75,29 @@
     </header>
 
     <!-- Wars section  -->
-    <section class="container-content">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Kháng chiến chống
-                    Pháp</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
-                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Kháng chiến chống
-                    Mỹ</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
-                    type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Trận Thành Cổ Quảng
-                    Trị 1972</button>
-            </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
-                tabindex="0">
-                <img src="./img/Kháng chiến chống Pháp.png" alt="">
-                <h2><strong>Kháng chiến chống Pháp (1945-1954)</strong></h2>
-                <h3><strong>1. Hoàn cảnh bùng nổ</strong></h3>
-                <ul>
-                    <li>Sau Cách mạng Tháng Tám 1945, nước Việt Nam Dân chủ Cộng hòa ra đời.</li>
-                    <li>Thực dân Pháp quay lại xâm lược nước ta lần nữa.</li>
-                    <li>Ngày 19/12/1946, Chủ tịch Hồ Chí Minh kêu gọi toàn quốc kháng chiến.</li>
-                </ul>
-                <h3><strong>2.Quá trình kháng chiến (1946–1954)</strong></h3>
-                <strong>Giai đoạn 1946–1950</strong>
-                <ul>
-                    <li>Ta thực hiện chiến lược: <strong>vừa kháng chiến – vừa kiến quốc.</strong></li>
-                    <li>Chiến tranh du kích, tiêu hao sinh lực địch.</li>
-                    <li>Nhiều chiến thắng quan trọng: <strong>Việt Bắc Thu – Đông 1947</strong>, phá tan âm mưu “đánh
-                        nhanh thắng nhanh” của Pháp.</li>
-                </ul>
-                <strong>Giai đoạn 1950–1953</strong>
-                <ul>
-                    <li>Sau Chiến dịch <strong>Biên Giới 1950</strong>, ta giành thế chủ động.</li>
-                    <li>Bộ đội chủ lực lớn mạnh, mở nhiều chiến dịch lớn: Trung Du, Đường số 18, Hòa Bình, Tây Bắc...
-                    </li>
-                </ul>
-                <strong>Giai đoạn 1953–1954</strong>
-                <ul>
-                    <li>Ta thực hiện <strong>kế hoạch Đông – Xuân 1953–1954</strong>, buộc Pháp phân tán quân.</li>
-                    <li>Trận quyết chiến chiến lược: <strong>Chiến dịch Điện Biên Phủ</strong> (13/3 – 7/5/1954).</li>
-                    <li>Ta tiêu diệt toàn bộ tập đoàn cứ điểm, làm sụp đổ ý chí xâm lược của Pháp.</li>
-                </ul>
-                <h3><strong>3. Kết quả – ý nghĩa</strong></h3>
-                <strong>Kết quả</strong>
-                <ul>
-                    <li>Ta thắng lợi vang dội ở Điện Biên Phủ (7/5/1954).</li>
-                    <li>Ngày 21/7/1954, Hiệp định Giơ-ne-vơ được ký kết → Pháp phải công nhận độc lập, chủ quyền, thống
-                        nhất của Việt Nam.</li>
-                </ul>
-                <strong>Ý nghĩa</strong>
-                <ul>
-                    <li>Kết thúc thực dân Pháp xâm lược Việt Nam sau gần 100 năm.</li>
-                    <li>Góp phần làm tan rã hệ thống thuộc địa của chủ nghĩa thực dân cũ trên thế giới.</li>
-                    <li>Tạo cơ sở và niềm tin để nhân dân ta tiếp tục đấu tranh giải phóng miền Nam sau này.</li>
-                </ul>
+    <section class="wars-section">
+
+        <div class="wars-container" id="warsContainer">
+
+            <!-- CARD TEMPLATE -->
+            <div class="war-card">
+
+                <img class="war-img" src="" alt="">
+
+                <div class="war-content">
+
+                    <h3 class="war-title"></h3>
+
+                    <p class="war-desc"></p>
+
+                    <a class="btn-detail" href="#">Xem chi tiết</a>
+
+                </div>
+
             </div>
-            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                <img src="./img/Kháng chiến chống Mỹ.png" alt="">
-                <h2><strong>Kháng chiến chống Mỹ (1954–1975)</strong></h2>
-                <h3><strong>1. Hoàn cảnh bùng nổ</strong></h3>
-                <ul>
-                    <li>Sau Hiệp định Giơ-ne-vơ 1954, đất nước tạm thời chia cắt tại vĩ tuyến 17.</li>
-                    <li>Đế quốc Mỹ can thiệp vào miền Nam, dựng nên chính quyền tay sai và tiến hành chiến tranh xâm
-                        lược.</li>
-                    <li>Nhiệm vụ của nhân dân ta:<strong>Đấu tranh thống nhất đất nước.</strong></li>
-                </ul>
-                <h3><strong>2. Diễn biến chính của cuộc kháng chiến</strong></h3>
-                <strong>1954–1960: Giữ gìn lực lượng – Đồng khởi</strong>
-                <ul>
-                    <li>Mỹ – Diệm thiết lập chế độ độc tài, đàn áp phong trào yêu nước.</li>
-                    <li>Nhân dân miền Nam đấu tranh chính trị →<strong>Phong trào Đồng Khởi 1959–1960</strong>, mở đầu
-                        cao trào cách mạng.</li>
-                </ul>
-                <strong>1961–1965: Chiến lược “Chiến tranh đặc biệt”</strong>
-                <ul>
-                    <li>Ta đánh bại bằng các trận lớn:<strong>Ấp Bắc (1963)</strong>, phá “ấp chiến lược”.</li>
-                    <li>Mỹ dùng quân đội Sài Gòn, cố vấn Mỹ, vũ khí hiện đại.</li>
-                </ul>
-                <strong>1965–1968: “Chiến tranh cục bộ”</strong>
-                <ul>
-                    <li>Mỹ đưa quân ồ ạt vào Việt Nam.</li>
-                    <li>Ta chuyển sang đánh Mỹ trực tiếp, nổi bật có Vạn Tường (1965).</li>
-                    <li>Tổng tiến công và nổi dậy Tết Mậu Thân 1968 làm lung lay ý chí xâm lược của Mỹ.</li>
-                </ul>
-                <strong>1969–1973: “Việt Nam hóa chiến tranh”</strong>
-                <ul>
-                    <li>Mỹ rút dần quân, tăng cường quân đội Sài Gòn.</li>
-                    <li>Ta đẩy mạnh ba mũi tiến công: quân sự – chính trị – ngoại giao.</li>
-                    <li>Kết thúc bằng Hiệp định Paris (27/1/1973) → Mỹ buộc phải rút hết quân.</li>
-                </ul>
-                <strong>1973–1975: Giải phóng hoàn toàn miền Nam</strong>
-                <ul>
-                    <li>Ta tranh thủ thời cơ, phát động tổng tấn công:</li>
-                    <ul>
-                        <li>Chiến dịch Tây Nguyên (3/1975)</li>
-                        <li>Chiến dịch Huế – Đà Nẵng</li>
-                        <li>Chiến dịch Hồ Chí Minh (30/4/1975) → Giải phóng Sài Gòn.</li>
-                    </ul>
-                </ul>
-                <h3><strong>3. Kết quả – ý nghĩa</strong></h3>
-                <strong>Kết quả</strong>
-                <ul>
-                    <li>Đất nước được thống nhất hoàn toàn vào ngày 30/4/1975.</li>
-                    <li>Chính quyền Sài Gòn sụp đổ, Mỹ thất bại nặng nề.</li>
-                </ul>
-                <strong>Ý nghĩa</strong>
-                <ul>
-                    <li>Kết thúc ách thống trị của chủ nghĩa đế quốc ở miền Nam Việt Nam.</li>
-                    <li>Đưa cả nước bước vào thời kỳ hòa bình, độc lập, xây dựng CNXH.</li>
-                    <li>Là thắng lợi có ý nghĩa lịch sử và thời đại, cổ vũ phong trào giải phóng dân tộc trên thế giới.
-                    </li>
-                </ul>
-            </div>
-            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-                <img src="./img/Thành cổ quảng trị.png" alt="">
-                <h2><strong>Trận Thành Cổ Quảng Trị (1972)</strong></h2>
-                <h3><strong>1. Hoàn cảnh bùng nổ</strong></h3>
-                <ul>
-                    <li>Năm 1972, Mỹ đẩy mạnh <strong>"Việt Nam hoá chiến tranh"</strong>, rút quân nhưng tăng cường
-                        quân đội Sài Gòn.</li>
-                    <li>Miền Bắc mở <strong>Cuộc tiến công chiến lược 1972</strong>nhằm giành lại thế chủ động và tạo
-                        điều kiện cho đàm phán Paris.</li>
-                    <li>Quảng Trị – vị trí chiến lược quan trọng ở miền Trung – trở thành điểm quyết chiến.</li>
-                </ul>
-                <h3><strong>2. Diễn biến chính của cuộc kháng chiến</strong></h3>
-                <strong>Giai đoạn 1: Giải phóng Quảng Trị (3–5/1972)</strong>
-                <ul>
-                    <li>Quân Giải phóng mở chiến dịch tấn công lớn tại Trị – Thiên.</li>
-                    <li>Ngày<strong>1/5/1972</strong>, ta giải phóng hoàn toàn tỉnh Quảng Trị.</li>
-                    <li><strong>Thành Cổ Quảng Trị</strong>trở thành điểm phòng thủ quan trọng.</li>
-                </ul>
-                <strong>Giai đoạn 2: 81 ngày đêm giữ thành (28/6 – 16/9/1972)</strong>
-                <br>
-                <p><strong>Đây là phần ác liệt nhất:</strong></p>
-                <ul>
-                    <li>Quân đội Sài Gòn mở <strong>Chiến dịch Lam Sơn 72</strong> để tái chiếm Quảng Trị.</li>
-                    <li>Mỹ huy động:</li>
-                    <ul>
-                        <li>Pháo hạm ngoài biển</li>
-                        <li>Không quân chiến lược B-52</li>
-                        <li>Bom đạn cực lớn và hoá học</li>
-                    </ul>
-                    <li>Mật độ bom đạn được ví như <strong>“mỗi chiến sĩ phải chịu trung bình 300 quả
-                            pháo/ngày”.</strong></li>
-                </ul>
-                <strong>81 ngày đêm,</strong> quân Giải phóng:
-                <ul>
-                    <li>Kiên cường bám trụ trong lòng thành nhỏ chỉ khoảng <strong>2 ha</strong>.</li>
-                    <li>Đánh lui hàng trăm đợt tấn công.</li>
-                    <li>Gây thiệt hại lớn cho địch và kìm chân lực lượng chủ lực của họ.</li>
-                </ul>
-                <h3><strong>3. Kết quả – ý nghĩa</strong></h3>
-                <strong>Kết quả</strong>
-                <ul>
-                    <li>Ngày <strong>16/9/1972</strong>, do tương quan lực lượng và chiến lược chung, ta rút khỏi Thành
-                        Cổ để bảo toàn lực lượng.</li>
-                    <li>Tuy địch chiếm được Thành Cổ nhưng:</li>
-                    <ul>
-                        <li>Toàn tỉnh Quảng Trị, <strong>trong đó có bờ Bắc sông Thạch Hãn</strong>, vẫn thuộc về ta.
-                        </li>
-                        <li>Mỹ – Sài Gòn tổn thất nặng nề, ý chí suy sụp.</li>
-                    </ul>
-                </ul>
-                <strong>4.Ý nghĩa</strong>
-                <ul>
-                    <li>Khẳng định sức chiến đấu kiên cường, ý chí thép của quân và dân ta.</li>
-                    <li>Là <strong>mốc quan trọng buộc Mỹ phải nhượng bộ</strong>và ký Hiệp định Paris (1973).</li>
-                    <li>Trở thành biểu tượng bất tử của:</li>
-                    <ul>
-                        <li>Chủ nghĩa anh hùng cách mạng</li>
-                        <li>Sự hy sinh của hàng vạn chiến sĩ vượt sông Thạch Hãn</li>
-                    </ul>
-                    <li>Để lại nhiều di tích, nơi tri ân và tưởng niệm ngày nay.</li>
-                </ul>
-            </div>
+
         </div>
+
     </section>
 
     <!-- Footer  -->
@@ -276,7 +116,8 @@
         </p>
     </footer>
 
-
+    <!-- JS -->
+     <script src="./js/Khang-chien.js"></script>
     <!-- Bootstrap js  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

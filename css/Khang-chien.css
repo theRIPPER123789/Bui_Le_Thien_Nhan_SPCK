@@ -88,7 +88,7 @@ ul{
 .hero {
     position: relative;
     height: 320px;
-    background: url('../img/Điệu\ biên\ phủ.png')
+    background: url('../img/Chiến\ tranh/Điệu biên phủ.png')
         center/cover;
     display: flex;
     flex-direction: column;
@@ -123,78 +123,108 @@ ul{
     opacity: 0.9;
 }
 
-/* content  */
-.container-content {
-    max-width: 900px;
-    margin: 40px auto;
-    background: #1a1a1a;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.15);
-}
-.nav-tabs {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-}
-.nav-tabs .nav-link {
-    color: #d2b48c; /* màu nâu vàng */
-    font-weight: 600;
-    border: none;
-    padding: 12px 20px;
-    transition: 0.3s ease;
+/* container */
+
+.wars-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:28px;
+    padding:40px;
 }
 
-.nav-tabs .nav-link:hover {
-    color: #ff4d4d; /* đỏ */
+/* card */
+
+.war-card{
+    background:#232820;
+    border-radius:18px;
+    overflow:hidden;
+    position:relative;
+    transition:0.35s;
+    box-shadow:0 8px 25px rgba(0,0,0,0.6);
 }
 
-.nav-tabs .nav-link.active {
-    background: #5a2a2a; /* nâu đậm */
-    color: #f0cf16;       /* đỏ nhạt */
-    border-radius: 8px 8px 0 0;
-    font-weight: 700;
-    box-shadow: 0 0 15px rgba(255, 80, 80, 0.25);
-}
-.tab-content {
-    background: #222;
-    padding: 25px;
-    border-radius: 12px;
-    border-top: 2px solid #8b0000;
-    box-shadow: 0 0 20px rgba(139, 0, 0, 0.25);
-}
-h2 {
-    color: #ff4d4d;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-shadow: 0 0 10px rgba(255, 80, 80, 0.4);
+/* glow border */
+
+.war-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:18px;
+    padding:1px;
+    opacity:0;
+    transition:0.4s;
 }
 
-h3 {
-    color: #d2b48c;
-    margin-top: 20px;
-}
-ul li {
-    margin-bottom: 8px;
+/* hover card */
+
+.war-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 12px 35px rgba(255,0,0,0.2);
 }
 
-strong {
-    color: #ffb3b3;
-}
-img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    border: 2px solid #5a2a2a;
-    box-shadow: 0 0 15px rgba(255, 50, 50, 0.2);
-}
-.tab-pane {
-    transition: 0.4s ease;
+.war-card:hover::before{
+    opacity:1;
 }
 
-.tab-pane:hover {
-    box-shadow: 0 0 25px rgba(255, 0, 0, 0.25);
+/* image */
+
+.war-img{
+    width:100%;
+    height:210px;
+    object-fit:cover;
+    transition:0.5s;
+}
+
+/* zoom image */
+
+.war-card:hover .war-img{
+    transform:scale(1.08);
+}
+
+/* content */
+
+.war-content{
+    padding:22px;
+}
+
+/* title */
+
+.war-title{
+    color:#f0cf16;
+    font-size:20px;
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+/* description */
+
+.war-desc{
+    color:#cfcfcf;
+    font-size:14px;
+    line-height:1.6;
+}
+
+/* button */
+
+.btn-detail{
+    display:inline-block;
+    margin-top:18px;
+    padding:10px 24px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+    color:white;
+
+    background:linear-gradient(135deg,#8b0000,#ff4d4d);
+
+    transition:0.3s;
+}
+
+/* hover button */
+
+.btn-detail:hover{
+    background:linear-gradient(135deg,#ff4d4d,#ff0000);
+    box-shadow:0 5px 15px rgba(255,0,0,0.4);
 }
 
 /* footer */

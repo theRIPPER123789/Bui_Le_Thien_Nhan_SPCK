@@ -1,0 +1,100 @@
+{
+  "wars": [
+    {
+      "title": "Khởi Nghĩa Hai Bà Trưng (40 - 43)",
+      "time": "40 - 43",
+      "enemy": "Nhà Đông Hán",
+      "leader": "Hai Bà Trưng",
+      "image": "img/Chiến tranh/khởi nghĩa hai bà trưng.png",
+      "description": "Cuộc khởi nghĩa đầu tiên chống ách đô hộ phương Bắc."
+    },
+    {
+      "title": "Chiến Thắng Bạch Đằng Lịch Sử (938)",
+      "time": "938",
+      "enemy": "Nam Hán",
+      "leader": "Ngô Quyền",
+      "image": "img/Chiến tranh/chiến thắng bạch đằng.png",
+      "description": "Ngô Quyền đánh bại quân Nam Hán trên sông Bạch Đằng."
+    },
+    {
+      "title": "Kháng Chiến Chống Tống (1075 - 1077)",
+      "time": "1075 - 1077",
+      "enemy": "Nhà Tống",
+      "leader": "Lý Thường Kiệt",
+      "image": "img/Chiến tranh/Kháng chiến chống Tống.png",
+      "description": "Nổi tiếng với bài thơ Nam quốc sơn hà."
+    },
+    {
+      "title": "Kháng Chiến Chống Nguyên - Mông (1258 - 1288)",
+      "time": "1258 - 1288",
+      "enemy": "Nguyên - Mông",
+      "leader": "Trần Hưng Đạo",
+      "image": "img/Chiến tranh/kháng chiến chống nguyên mông.png",
+      "description": "Ba lần đánh bại đội quân mạnh nhất thế giới lúc bấy giờ."
+    },
+    {
+      "title": "Khởi Nghĩa Lam Sơn (1418 - 1427)",
+      "time": "1418 - 1427",
+      "enemy": "Nhà Minh",
+      "leader": "Lê Lợi",
+      "image": "img/Chiến tranh/Khởi nghĩa Lam Sơn.png",
+      "description": "Kết thúc 20 năm đô hộ của nhà Minh."
+    },
+    {
+      "title": "Chiến Thắng Ngọc Hồi - Đống Đa (1789)",
+      "time": "1789",
+      "enemy": "Nhà Thanh",
+      "leader": "Quang Trung",
+      "image": "img/Chiến tranh/Chiến thắng Ngọc Hồi Đống Đa.png",
+      "description": "Đại thắng quân Thanh trong dịp Tết Kỷ Dậu."
+    },
+    {
+      "title": "Kháng Chiến Chống Pháp (1858 - 1954)",
+      "time": "1858 - 1954",
+      "enemy": "Thực dân Pháp",
+      "leader": "Hồ Chí Minh, Võ Nguyên Giáp",
+      "image": "img/Chiến tranh/Kháng chiến chống Pháp.png",
+      "description": "Kết thúc bằng chiến thắng Điện Biên Phủ."
+    },
+    {
+      "title": "Kháng Chiến Chống Mỹ (1955 - 1975)",
+      "time": "1955 - 1975",
+      "enemy": "Đế quốc Mỹ",
+      "leader": "Hồ Chí Minh, Võ Nguyên Giáp",
+      "image": "img/Chiến tranh/Kháng chiến chống Mỹ.png",
+      "description": "Kết thúc bằng sự kiện 30/4/1975, thống nhất đất nước."
+    },
+    {
+      "title": "Khởi Nghĩa Yên Thế (1884 - 1913)",
+      "time": "1884 - 1913",
+      "enemy": "Thực dân Pháp",
+      "leader": "Hoàng Hoa Thám",
+      "image": "img/Chiến tranh/Khởi Nghĩa Yên Thế.png",
+      "description": "Phong trào đấu tranh vũ trang chống thực dân Pháp kéo dài gần 30 năm ở vùng Yên Thế."
+    },
+    {
+      "title": "Cách Mạng Tháng Tám (1945)",
+      "time": "1945",
+      "enemy": "Phát xít Nhật và chính quyền tay sai",
+      "leader": "Hồ Chí Minh",
+      "image": "img/Chiến tranh/cách mạng tháng tám.png",
+      "description": "Cuộc cách mạng giành chính quyền trên toàn quốc, khai sinh nước Việt Nam Dân Chủ Cộng Hòa."
+    },
+    {
+      "title": "Chiến Tranh Biên Giới Việt - Trung (1979)",
+      "time": "1979",
+      "enemy": "Trung Quốc",
+      "leader": "Quân đội Nhân dân Việt Nam",
+      "image": "img/Chiến tranh/chiến tranh biên giới việt trung 1979.png",
+      "description": "Cuộc chiến tranh ngắn nhưng ác liệt xảy ra dọc biên giới phía Bắc Việt Nam."
+    },
+    {
+      "title": "Trận Thành Cổ Quảng Trị (81 Ngày Đêm 1972)",
+      "time": "1972",
+      "enemy": "Mỹ và Việt Nam Cộng Hòa",
+      "leader": "Quân đội Nhân dân Việt Nam",
+      "image": "img/Chiến tranh/Thành cổ quảng trị.png",
+      "description": "Trận chiến kéo dài 81 ngày đêm tại Thành cổ Quảng Trị trong Chiến dịch Xuân - Hè 1972, một trong những trận chiến ác liệt nhất của chiến tranh Việt Nam."
+    }
+  ]
+}
