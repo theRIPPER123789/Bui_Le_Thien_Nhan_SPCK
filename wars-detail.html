@@ -22,7 +22,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- Main css  -->
-    <link rel="stylesheet" href="./css/Khang-chien.css">
+    <link rel="stylesheet" href="./css/wars-detail.css">
 </head>
 
 <body>
@@ -74,31 +74,69 @@
         </div>
     </header>
 
-    <!-- Wars section  -->
-    <section class="wars-section">
+    <!-- wars-detail -->
+    <div class="container war-detail">
 
-        <div class="wars-container" id="warsContainer">
+        <h2 class="war-name">Trận Thành Cổ Quảng Trị (1972)</h2>
 
-            <!-- CARD TEMPLATE -->
-            <div class="war-card">
+        <ul class="nav nav-pills justify-content-center mb-4">
 
-                <img class="war-img" src="" alt="">
+            <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#time">
+                    Thời gian
+                </button>
+            </li>
 
-                <div class="war-content">
+            <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#process">
+                    Quá trình
+                </button>
+            </li>
 
-                    <h3 class="war-title"></h3>
+            <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#meaning">
+                    Ý nghĩa
+                </button>
+            </li>
 
-                    <p class="war-desc"></p>
+            <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#result">
+                    Kết quả
+                </button>
+            </li>
 
-                    <a class="btn-detail" href="./wars-detail.html">Xem chi tiết</a>
+        </ul>
 
-                </div>
 
+        <div class="tab-content">
+
+            <div class="tab-pane fade show active" id="time">
+                <p>
+                    Trận chiến diễn ra năm 1972 trong chiến dịch Xuân – Hè tại Quảng Trị.
+                </p>
+            </div>
+
+            <div class="tab-pane fade" id="process">
+                <p>
+                    Trận chiến diễn ra trong 81 ngày đêm tại Thành Cổ Quảng Trị với cường độ bom đạn rất lớn.
+                </p>
+            </div>
+
+            <div class="tab-pane fade" id="meaning">
+                <p>
+                    Trận chiến trở thành biểu tượng cho tinh thần chiến đấu và sự hy sinh của quân đội Việt Nam.
+                </p>
+            </div>
+
+            <div class="tab-pane fade" id="result">
+                <p>
+                    Tạo lợi thế quan trọng trên bàn đàm phán Hiệp định Paris năm 1973.
+                </p>
             </div>
 
         </div>
 
-    </section>
+    </div>
 
     <!-- Footer  -->
     <footer class="white-section">
@@ -117,7 +155,7 @@
     </footer>
 
     <!-- JS -->
-     <script src="./js/Khang-chien.js"></script>
+    <script src="./js/Khang-chien.js"></script>
     <!-- Bootstrap js  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
