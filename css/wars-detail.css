@@ -123,422 +123,202 @@ ul{
     opacity: 0.9;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* =========================
+   WAR DETAIL CONTAINER
+========================= */
 
-body{
-  margin: 0;
-  background-color: #181C14;
-  font-family: 'Merriweather', serif;
-  color: #f5f5f5;
-  line-height: 1.6;
-}
+.war-detail{
 
-/* Logo  */
-.logo {
-    width: 75px;
-    height: 75px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid #8C1007;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    margin-top:60px;
+    margin-bottom:60px;
 
-.logo:hover {
-    transform: scale(1.08);
-    box-shadow: 0 0 10px #8C1007;
-}
-ul{
-  margin-bottom: 0;
-}
-/* Navigation bar  */
-.navbar {
-    background-color: #181C14;
-    padding: 1rem 0;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-    position: sticky;
-    top: 0px;
-    z-index: 99999;
-}
+    max-width:900px;
 
-.nav-link {
-    color: #fff !important;
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin: 0 1rem;
-    position: relative;
-    transition: color 0.3s ease;
-}
+    background:#20241d;
 
-.nav-link:hover,
-.nav-link.active {
-    color: #8C1007 !important;
-}
+    padding:40px;
 
-.nav-link::after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    bottom: -4px;
-    left: 0;
-    background-color: #8C1007;
-    transition: width 0.3s ease;
-}
-
-.nav-link:hover::after {
-    width: 100%;
-}
-
-.btn {
-    border-radius: 25px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.btn-outline-light:hover {
-    background-color: #fff;
-    color: #181C14;
-}
-
-.btn-warning:hover {
-    background-color: #8C1007   ;
-}
-
-
-/* Hero banner */
-.hero {
-    position: relative;
-    height: 320px;
-    background: url('../img/Chiến\ tranh/Điệu biên phủ.png')
-        center/cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #f7d88c;
-    text-align: center;
-    margin-bottom: 70px;
-}
-
-.hero .overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.55);
-}
-
-.hero h1,
-.hero p {
-    position: relative;
-    z-index: 2;
-}
-
-.hero h1 {
-    font-size: 52px;
-    font-weight: bold;
-    text-shadow: 0 0 10px black;
-}
-
-.hero p {
-    font-size: 20px;
-    margin-top: 10px;
-    opacity: 0.9;
-}
-
-/* container */
-
-.wars-container{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap:28px;
-    padding:20px;
-}
-
-/* card */
-
-.war-card{
-    background:#232820;
-    border-radius:18px;
-    overflow:hidden;
-    position:relative;
-    transition:0.35s;
-    box-shadow:0 8px 25px rgba(0,0,0,0.6);
-}
-
-/* hover card */
-
-.war-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 12px 35px rgba(255,0,0,0.2);
-}
-
-.war-card:hover::before{
-    opacity:1;
-}
-
-/* image */
-
-.war-img{
-    width:100%;
-    height:210px;
-    object-fit:cover;
-    transition:0.5s;
-}
-
-/* zoom image */
-
-.war-card:hover .war-img{
-    transform:scale(1.08);
-}
-
-/* content */
-
-.war-content{
-    padding:22px;
-}
-
-/* title */
-
-.war-title{
-    color:#f0cf16;
-    font-size:20px;
-    margin-bottom:10px;
-    font-weight:700;
-}
-
-/* description */
-
-.war-desc{
-    color:#cfcfcf;
-    font-size:14px;
-    line-height:1.6;
-}
-
-/* button */
-
-.btn-detail{
-    display:inline-block;
-    margin-top:18px;
-    padding:10px 24px;
     border-radius:10px;
-    text-decoration:none;
-    font-weight:600;
+
+    box-shadow:
+    0 0 30px rgba(0,0,0,0.6);
+
+    border:1px solid #2f3528;
+}
+
+/* =========================
+   WAR TITLE
+========================= */
+
+.war-name{
+
+    text-align:center;
+
+    font-size:30px;
+
+    margin-bottom:30px;
+
+    font-weight:700;
+
+    color:#f1f1f1;
+}
+
+/* =========================
+   NAV TABS
+========================= */
+
+.nav-pills{
+
+    gap:10px;
+
+}
+
+.nav-pills .nav-link{
+
+    background:#2c3226;
+
+    color:#ddd;
+
+    border-radius:6px;
+
+    padding:10px 18px;
+
+    transition:0.3s;
+
+}
+
+.nav-pills .nav-link:hover{
+
+    background:#3a4131;
+
+}
+
+.nav-pills .nav-link.active{
+
+    background:#e63946;
+
     color:white;
 
-    background:linear-gradient(135deg,#8b0000,#ff4d4d);
+    font-weight:600;
+
+}
+
+/* =========================
+   CONTENT BOX
+========================= */
+
+.tab-content{
+
+    background:#151812;
+
+    padding:30px;
+
+    border-radius:8px;
+
+    border:1px solid #2a2f24;
+
+    line-height:1.8;
+
+    font-size:17px;
+}
+
+.tab-content p{
+
+    margin:0;
+}
+
+/* =========================
+   IMPORTANT TEXT
+========================= */
+
+strong{
+
+    color:#ffb703;
+
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    background:#0f120d;
+
+    padding:40px 0;
+
+    text-align:center;
+
+    border-top:1px solid #2d3328;
+}
+
+.social-buttons{
+
+    margin-bottom:15px;
+}
+
+.social-buttons .btn{
+
+    color:white;
+
+    font-size:20px;
+
+    margin:0 8px;
 
     transition:0.3s;
 }
 
-/* hover button */
+.social-buttons .btn:hover{
 
-.btn-detail:hover{
-    background:linear-gradient(135deg,#ff4d4d,#ff0000);
-    box-shadow:0 5px 15px rgba(255,0,0,0.4);
+    color:#e63946;
+
 }
 
-/* footer */
-.white-section {
-  background-color: #181C14;
-  color: #f5f5f5;
-  text-align: center;
-  padding: 40px 20px;
-  font-family: 'Merriweather', 'Times New Roman', serif;
+.copy-right{
+
+    font-size:14px;
+
+    color:#aaa;
 }
 
-.social-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 20px;
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width:768px){
+
+.hero{
+
+    height:220px;
+
 }
 
-.social-buttons .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 45px;
-  height: 45px;
-  background-color: #b91c1c;
-  color: #fff;
-  border-radius: 50%;
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
+.hero h1{
+
+    font-size:28px;
+
 }
 
-.social-buttons .btn:hover {
-  background-color: #ef4444;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 10px rgba(185, 28, 28, 0.4);
+.hero p{
+
+    font-size:15px;
+
 }
 
-.copy-right {
-  font-size: 0.9rem;
-  color: #ddd;
+.war-detail{
+
+    margin:40px 15px;
+
+    padding:25px;
+
 }
 
-.copy-right a {
-  color: #FFD700;
-  text-decoration: none;
+.nav-pills{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
 }
 
-.copy-right a:hover {
-  text-decoration: underline;
-}
-
-/* footer */
-.white-section {
-  background-color: #181C14;
-  color: #f5f5f5;
-  text-align: center;
-  padding: 40px 20px;
-  font-family: 'Merriweather', 'Times New Roman', serif;
-}
-
-.social-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-
-.social-buttons .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 45px;
-  height: 45px;
-  background-color: #b91c1c;
-  color: #fff;
-  border-radius: 50%;
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
-}
-
-.social-buttons .btn:hover {
-  background-color: #ef4444;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 10px rgba(185, 28, 28, 0.4);
-}
-
-.copy-right {
-  font-size: 0.9rem;
-  color: #ddd;
-}
-
-.copy-right a {
-  color: #FFD700;
-  text-decoration: none;
-}
-
-.copy-right a:hover {
-  text-decoration: underline;
-}
-
-/* REPONSIVE  */
-.container {
-  max-width: 100%;
-  padding: 0 15px;
-}
-
-body {
-  font-size: 16px;
-}
-
-/* Mobile devices (up to 767px) */
-@media (max-width: 767px) {
-  .navbar {
-    padding: 0.5rem 0;
-  }
-
-  .nav-link {
-    font-size: 1rem;
-    margin: 0 0.5rem;
-  }
-
-  .hero {
-    height: 250px;
-    margin-bottom: 40px;
-  }
-
-  .hero h1 {
-    font-size: 32px;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-
-  .wars-container {
-    padding: 15px;
-    gap: 20px;
-  }
-
-  .war-content {
-    padding: 15px;
-  }
-
-  .war-title {
-    font-size: 18px;
-  }
-
-  .war-desc {
-    font-size: 13px;
-  }
-
-  .btn-detail {
-    padding: 8px 20px;
-    font-size: 14px;
-  }
-
-  .footer {
-    padding: 20px 15px;
-  }
-
-  .social-buttons {
-    gap: 15px;
-  }
-
-  .copy-right {
-    font-size: 0.8rem;
-  }
-}
-
-/* Tablet devices (768px to 991px) */
-@media (min-width: 768px) and (max-width: 991px) {
-  .hero {
-    height: 300px;
-  }
-
-  .hero h1 {
-    font-size: 42px;
-  }
-
-  .hero p {
-    font-size: 18px;
-  }
-
-  .wars-container {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 30px;
-  }
-
-  .war-content {
-    padding: 18px;
-  }
-}
-
-/* Desktop devices (992px and above) */
-@media (min-width: 992px) {
-  .wars-container {
-    grid-template-columns: repeat(4, 1fr);
-    padding: 40px;
-  }
 }
