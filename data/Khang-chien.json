@@ -1,6 +1,7 @@
 {
   "wars": [
     {
+      "id": "hai_ba_trung",
       "title": "Khởi Nghĩa Hai Bà Trưng (40 - 43)",
       "time": "40 - 43",
       "enemy": "Nhà Đông Hán",
@@ -9,6 +10,7 @@
       "description": "Cuộc khởi nghĩa đầu tiên chống ách đô hộ phương Bắc."
     },
     {
+      "id": "bach_dang_938",
       "title": "Chiến Thắng Bạch Đằng Lịch Sử (938)",
       "time": "938",
       "enemy": "Nam Hán",
@@ -17,6 +19,7 @@
       "description": "Ngô Quyền đánh bại quân Nam Hán trên sông Bạch Đằng."
     },
     {
+      "id": "chong_tong",
       "title": "Kháng Chiến Chống Tống (1075 - 1077)",
       "time": "1075 - 1077",
       "enemy": "Nhà Tống",
@@ -25,6 +28,7 @@
       "description": "Nổi tiếng với bài thơ Nam quốc sơn hà."
     },
     {
+      "id": "nguyen_mong",
       "title": "Kháng Chiến Chống Nguyên - Mông (1258 - 1288)",
       "time": "1258 - 1288",
       "enemy": "Nguyên - Mông",
@@ -33,6 +37,7 @@
       "description": "Ba lần đánh bại đội quân mạnh nhất thế giới lúc bấy giờ."
     },
     {
+      "id": "lam_son",
       "title": "Khởi Nghĩa Lam Sơn (1418 - 1427)",
       "time": "1418 - 1427",
       "enemy": "Nhà Minh",
@@ -41,6 +46,7 @@
       "description": "Kết thúc 20 năm đô hộ của nhà Minh."
     },
     {
+      "id": "ngoc_hoi_dong_da",
       "title": "Chiến Thắng Ngọc Hồi - Đống Đa (1789)",
       "time": "1789",
       "enemy": "Nhà Thanh",
@@ -49,6 +55,7 @@
       "description": "Đại thắng quân Thanh trong dịp Tết Kỷ Dậu."
     },
     {
+      "id": "chong_phap",
       "title": "Kháng Chiến Chống Pháp (1858 - 1954)",
       "time": "1858 - 1954",
       "enemy": "Thực dân Pháp",
@@ -57,6 +64,7 @@
       "description": "Kết thúc bằng chiến thắng Điện Biên Phủ."
     },
     {
+      "id": "chong_my",
       "title": "Kháng Chiến Chống Mỹ (1955 - 1975)",
       "time": "1955 - 1975",
       "enemy": "Đế quốc Mỹ",
@@ -65,6 +73,7 @@
       "description": "Kết thúc bằng sự kiện 30/4/1975, thống nhất đất nước."
     },
     {
+      "id": "yen_the",
       "title": "Khởi Nghĩa Yên Thế (1884 - 1913)",
       "time": "1884 - 1913",
       "enemy": "Thực dân Pháp",
@@ -73,6 +82,7 @@
       "description": "Phong trào đấu tranh vũ trang chống thực dân Pháp kéo dài gần 30 năm ở vùng Yên Thế."
     },
     {
+      "id": "cach_mang_thang_tam",
       "title": "Cách Mạng Tháng Tám (1945)",
       "time": "1945",
       "enemy": "Phát xít Nhật và chính quyền tay sai",
@@ -81,6 +91,7 @@
       "description": "Cuộc cách mạng giành chính quyền trên toàn quốc, khai sinh nước Việt Nam Dân Chủ Cộng Hòa."
     },
     {
+      "id": "bien_gioi_1979",
       "title": "Chiến Tranh Biên Giới Việt - Trung (1979)",
       "time": "1979",
       "enemy": "Trung Quốc",
@@ -89,12 +100,13 @@
       "description": "Cuộc chiến tranh ngắn nhưng ác liệt xảy ra dọc biên giới phía Bắc Việt Nam."
     },
     {
+      "id": "quang_tri_1972",
       "title": "Trận Thành Cổ Quảng Trị (81 Ngày Đêm 1972)",
       "time": "1972",
       "enemy": "Mỹ và Việt Nam Cộng Hòa",
       "leader": "Quân đội Nhân dân Việt Nam",
       "image": "img/Chiến tranh/Thành cổ quảng trị.png",
-      "description": "Trận chiến kéo dài 81 ngày đêm tại Thành cổ Quảng Trị trong Chiến dịch Xuân - Hè 1972, một trong những trận chiến ác liệt nhất của chiến tranh Việt Nam."
+      "description": "Trận chiến kéo dài 81 ngày đêm tại Thành cổ Quảng Trị trong Chiến dịch Xuân - Hè 1972."
     }
   ]
 }

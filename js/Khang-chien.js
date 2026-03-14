@@ -22,7 +22,7 @@ const displayCourses = async (courses) => {
 
                     <p class="war-desc">${course.description}</p>
 
-                    <a class="btn-detail" href="./wars-detail.html">Xem chi tiết</a>
+                    <a class="btn-detail" href="./wars-detail.html?id=${course.id}">Xem chi tiết</a>
 
                 </div>
 
