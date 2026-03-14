@@ -250,3 +250,109 @@ ul{
 body {
   font-size: 16px;
 }
+
+/* Mobile devices (up to 767px) */
+@media (max-width: 767px) {
+  .navbar {
+    padding: 0.5rem 0;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+  }
+
+  .hero {
+    height: 250px;
+    margin-bottom: 40px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .heroes {
+    margin-top: 40px;
+  }
+
+  .heroes h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .hero-grid {
+    gap: 20px;
+  }
+
+  .hero-card {
+    padding-bottom: 15px;
+  }
+
+  .hero-card img {
+    height: 200px;
+  }
+
+  .hero-card h3 {
+    font-size: 1.1rem;
+    margin: 12px 0 8px;
+  }
+
+  .hero-card p {
+    padding: 0 12px;
+    font-size: 0.9rem;
+  }
+
+  .hero-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .white-section {
+    padding: 20px 15px;
+  }
+
+  .social-buttons {
+    gap: 12px;
+  }
+
+  .social-buttons .btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .copy-right {
+    font-size: 0.8rem;
+  }
+}
+
+/* Tablet devices (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero {
+    height: 300px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .hero-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+/* Desktop devices (992px and above) */
+@media (min-width: 992px) {
+  .hero-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}

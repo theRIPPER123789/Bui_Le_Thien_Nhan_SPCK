@@ -127,9 +127,9 @@ ul{
 
 .wars-container{
     display:grid;
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap:28px;
-    padding:40px;
+    padding:20px;
 }
 
 /* card */
@@ -274,4 +274,95 @@ ul{
 
 body {
   font-size: 16px;
+}
+
+/* Mobile devices (up to 767px) */
+@media (max-width: 767px) {
+  .navbar {
+    padding: 0.5rem 0;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+  }
+
+  .hero {
+    height: 250px;
+    margin-bottom: 40px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .wars-container {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .war-content {
+    padding: 15px;
+  }
+
+  .war-title {
+    font-size: 18px;
+  }
+
+  .war-desc {
+    font-size: 13px;
+  }
+
+  .btn-detail {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .footer {
+    padding: 20px 15px;
+  }
+
+  .social-buttons {
+    gap: 15px;
+  }
+
+  .copy-right {
+    font-size: 0.8rem;
+  }
+}
+
+/* Tablet devices (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero {
+    height: 300px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .wars-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+  }
+
+  .war-content {
+    padding: 18px;
+  }
+}
+
+/* Desktop devices (992px and above) */
+@media (min-width: 992px) {
+  .wars-container {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px;
+  }
 }

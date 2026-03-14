@@ -282,3 +282,108 @@ ul{
 body {
   font-size: 16px;
 }
+
+/* Mobile devices (up to 767px) */
+@media (max-width: 767px) {
+  .navbar {
+    padding: 0.5rem 0;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+  }
+
+  .hero {
+    height: 250px;
+    margin-bottom: 40px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .content-wrapper {
+    padding: 40px 15px;
+  }
+
+  .coming-soon-box {
+    padding: 30px;
+    max-width: 100%;
+  }
+
+  .coming-soon-icon {
+    font-size: 3rem;
+  }
+
+  .coming-soon-title {
+    font-size: 2rem;
+  }
+
+  .coming-soon-text {
+    font-size: 1rem;
+  }
+
+  .notify-form {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .notify-input {
+    padding: 10px 15px;
+  }
+
+  .notify-btn {
+    padding: 10px 20px;
+  }
+
+  .white-section {
+    padding: 20px 15px;
+  }
+
+  .social-buttons {
+    gap: 12px;
+  }
+
+  .social-buttons .btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .copy-right {
+    font-size: 0.8rem;
+  }
+}
+
+/* Tablet devices (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero {
+    height: 300px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .coming-soon-box {
+    padding: 50px;
+  }
+
+  .coming-soon-title {
+    font-size: 2.5rem;
+  }
+}
+
+/* Desktop devices (992px and above) */
+@media (min-width: 992px) {
+  /* Default styles are fine */
+}

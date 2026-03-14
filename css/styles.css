@@ -86,9 +86,12 @@ ul{
 /* sologan  */
 .sologan {
   position: relative;
-  width: 84rem;
-  height: 40rem;
+  width: 100%;
+  height: 60vh;
   background-image: url('../img/Chiến\ tranh/Điệu biên phủ.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .quote {
@@ -96,9 +99,10 @@ ul{
   top: 20px;
   left: 20px;
   color: #8C1007;
-  font-size: 20rem;
+  font-size: 3rem;
   border-radius: 8px;
   font-family: 'Cinzel', serif;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 
@@ -180,7 +184,7 @@ ul{
 
 /* Danh mục nổi bật  */
 .banner {
-  padding: 100px 30px;
+  padding: 50px 20px;
   text-align: center;
   background: linear-gradient(180deg, #697565 0%, #4e544c 100%);
   color: #fff;
@@ -188,10 +192,10 @@ ul{
 }
 
 .banner h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 800;
   letter-spacing: 1px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-transform: uppercase;
   color: #fff;
   font-family: 'Cinzel', serif;
@@ -322,14 +326,16 @@ ul{
 
 .hero-card {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   background: #fff;
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   transition: all 0.3s ease;
-  max-width: 900px;
+  max-width: 100%;
   margin: 40px auto;
+  padding: 20px;
 }
 
 .hero-card:hover {
@@ -338,11 +344,12 @@ ul{
 }
 
 .hero-card img {
-  width: 280px;
-  height: 350px;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
   object-fit: cover;
-  border-right: 5px solid #b91c1c;
-  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .hero-info {
@@ -393,7 +400,7 @@ ul{
   background-color: #181C14;
   color: #f5f5f5;
   text-align: center;
-  padding: 80px 20px;
+  padding: 50px 20px;
   font-family: 'Merriweather', serif;
 }
 
@@ -419,9 +426,11 @@ ul{
   border-radius: 15px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
   overflow: hidden;
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
   transition: all 0.3s ease;
   text-align: left;
+  margin-bottom: 20px;
 }
 
 .archive-card:hover {
@@ -561,33 +570,195 @@ ul{
   padding: 0 15px;
 }
 
-body {
-  font-size: 16px;
-}
+/* Responsive Styles */
 
-@media (max-width: 768px) {
-  body {
-    font-size: 14px;
+/* Mobile devices (up to 767px) */
+@media (max-width: 767px) {
+  .navbar {
+    padding: 0.5rem 0;
   }
 
-  h1,
-  h2,
-  h3 {
-    line-height: 1.3;
+  .nav-link {
+    font-size: 1rem;
+    margin: 0 0.5rem;
   }
-}
 
-@media (min-width: 768px) {
+  .sologan {
+    height: 40vh;
+  }
+
   .quote {
-    font-size: 3rem;
-    text-align: left;
-    max-width: 70%;
+    font-size: 1.5rem;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+  }
+
+  .background {
+    padding: 30px 15px;
+  }
+
+  .short-introduce {
+    padding: 20px 20px;
+  }
+
+  .short-introduce p {
+    font-size: 1rem;
+  }
+
+  .banner {
+    padding: 30px 15px;
+  }
+
+  .banner h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .row {
+    gap: 20px;
+  }
+
+  .card {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-body h3 {
+    font-size: 1.1rem;
+  }
+
+  .card-body p {
+    font-size: 0.9rem;
+  }
+
+  .hero-card {
+    margin: 20px 15px;
+    padding: 15px;
+  }
+
+  .hero-info {
+    padding: 15px 0;
+  }
+
+  .hero-info h3 {
+    font-size: 1.3rem;
+  }
+
+  .hero-info p {
+    font-size: 0.9rem;
+  }
+
+  .archive-section {
+    padding: 30px 15px;
+  }
+
+  .archive-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .archive-categories {
+    gap: 20px;
+  }
+
+  .archive-card {
+    max-width: 100%;
+  }
+
+  .archive-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .archive-card p {
+    font-size: 0.9rem;
+  }
+
+  .white-section {
+    padding: 20px 15px;
   }
 }
 
-@media (min-width: 992px) {
+/* Tablet devices (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .sologan {
+    height: 50vh;
+  }
+
+  .quote {
+    font-size: 2.5rem;
+    max-width: 80%;
+  }
+
+  .banner {
+    padding: 60px 20px;
+  }
+
+  .banner h2 {
+    font-size: 2.2rem;
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+
   .hero-card {
     flex-direction: row;
+    max-width: 90%;
+  }
+
+  .hero-card img {
+    width: 200px;
+    height: 250px;
+    border-right: 3px solid #b91c1c;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 10px;
+  }
+
+  .hero-info {
+    padding: 20px;
+  }
+
+  .archive-card {
+    width: calc(50% - 20px);
+    max-width: none;
+  }
+}
+
+/* Desktop devices (992px and above) */
+@media (min-width: 992px) {
+  .sologan {
+    height: 60vh;
+  }
+
+  .quote {
+    font-size: 3rem;
+    max-width: 70%;
+  }
+
+  .banner {
+    padding: 80px 30px;
+  }
+
+  .banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+  }
+
+  .card {
+    flex: 1 1 calc(33.333% - 27px);
+    max-width: calc(33.333% - 27px);
+  }
+
+  .hero-card {
+    flex-direction: row;
+    max-width: 900px;
   }
 
   .hero-card img {
@@ -595,20 +766,24 @@ body {
     height: 350px;
     border-right: 5px solid #b91c1c;
     border-bottom: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 15px;
   }
-}
 
-.archive-categories {
-  gap: 20px;
-}
+  .hero-info {
+    padding: 25px 30px;
+  }
 
-.archive-card {
-  width: 100%;
-  margin-bottom: 30px;
-}
+  .archive-section {
+    padding: 80px 20px;
+  }
 
-@media (min-width: 768px) {
+  .archive-section h2 {
+    font-size: 2.2rem;
+  }
+
   .archive-card {
-    width: calc(50% - 20px);
+    width: 320px;
   }
 }
