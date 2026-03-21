@@ -2,6 +2,7 @@
   "wars":[
 
 {
+"id":0,
 "title":"Khởi nghĩa Hai Bà Trưng",
 "time":"40 - 43",
 "enemy":"Nhà Đông Hán",
@@ -20,7 +21,7 @@
 "phases":[
 
 {
-"period":"Năm 40",
+"period":"Năm 40d",
 "title":"Bùng nổ khởi nghĩa",
 "content":[
 "Hai Bà Trưng phất cờ khởi nghĩa tại Hát Môn.",
@@ -70,6 +71,7 @@
 },
 
 {
+"id":1,
 "title":"Chiến thắng Bạch Đằng",
 "time":"938",
 "enemy":"Nam Hán",
@@ -124,6 +126,7 @@
 },
 
 {
+"id":2,
 "title":"Kháng chiến chống Tống",
 "time":"981",
 "enemy":"Nhà Tống",
@@ -166,6 +169,7 @@
 },
 
 {
+"id":3,
 "title":"Kháng chiến chống Nguyên Mông",
 "time":"1258 - 1288",
 "enemy":"Đế quốc Nguyên Mông",
@@ -226,6 +230,7 @@
 },
 
 {
+"id":4,
 "title":"Khởi nghĩa Lam Sơn",
 "time":"1418 - 1427",
 "enemy":"Nhà Minh",
@@ -283,6 +288,7 @@
 },
 
 {
+"id":5,
 "title":"Chiến thắng Rạch Gầm – Xoài Mút",
 "time":"1785",
 "enemy":"Xiêm",
@@ -324,6 +330,7 @@
 },
 
 {
+"id":6,
 "title":"Chiến thắng Ngọc Hồi – Đống Đa",
 "time":"1789",
 "enemy":"Nhà Thanh",
