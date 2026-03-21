@@ -1,56 +1,39 @@
-const fetchDetailCourse = async () => {
+const fetchDetailWar = async () => {
 
-    //1. Lấy id từ URL
     const urlParams = new URLSearchParams(window.location.search);
-    const courseId = urlParams.get('id');
+    const id = urlParams.get('id');
 
-    // console.log(courseId);
-    // 2. Lấy data từ file JSON
-    const response = await fetch('./data/wars-detail.json');
+    const response = await fetch('./data/Khang-chien.json');
     const data = await response.json();
 
-    // 3. Tìm course có id trùng với id lấy được từ URL
-    const course = data.find(item => item.id == parseInt(courseId));
+    const war = data.wars.find(item => item.id === id)
 
-    // 4. Hiển thị thông tin chi tiết của course lên trang web
-    let detailContainer = document.getElementById('war-detail');
-    if (course) {
-        let warHtml = course.wars.map(war => {
-            return `<li>${war.title}</li>`;
-        }).join("");
-        detailContainer.innerHTML = `
-            <h2 class="war-name">${war.title}</h2>
+    const detailContainer = document.getElementById('war-detail');
+
+    if (!war) {
+        detailContainer.innerHTML = '<p>Không tìm thấy dữ liệu</p>';
+        return;
+    }
+
+    detailContainer.innerHTML = `
+        <h2 class="war-name">${war.title}</h2>
 
         <ul class="nav nav-pills justify-content-center mb-4">
-
             <li class="nav-item">
-                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#time">
-                    Thời gian
-                </button>
+                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#time">Thời gian</button>
             </li>
-
             <li class="nav-item">
-                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#process">
-                    Quá trình
-                </button>
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#process">Quá trình</button>
             </li>
-
             <li class="nav-item">
-                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#meaning">
-                    Ý nghĩa
-                </button>
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#meaning">Ý nghĩa</button>
             </li>
-
             <li class="nav-item">
-                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#result">
-                    Kết quả
-                </button>
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#result">Kết quả</button>
             </li>
-
         </ul>
 
         <div class="tab-content">
-
             <div class="tab-pane fade show active" id="time">
                 <p><strong>Thời gian:</strong> ${war.time}</p>
                 <p><strong>Đối thủ:</strong> ${war.enemy}</p>
@@ -77,14 +60,35 @@ const fetchDetailCourse = async () => {
                 <h4>Tư liệu</h4>
                 ${createList(war.details?.documents)}
             </div>
-
         </div>
-        `;
-        
-    } else {
-        detailContainer.innerHTML = '<p>Không tìm thấy thông tin về cuộc chiến này.</p>';
-    }
+    `;
+};
 
-}
+const createList = (data) => {
+    if (!data) return "";
 
-fetchDetailCourse();
+    let arr = Array.isArray(data)
+        ? data
+        : typeof data === "string"
+            ? data.split(/,|\n/)
+            : [];
+
+    arr = arr.map(i => i.trim()).filter(i => i);
+
+    return `<ul class="war-list">
+        ${arr.map(i => `<li>${i}</li>`).join("")}
+    </ul>`;
+};
+
+const createPhases = (phases) => {
+    if (!phases) return "";
+
+    return phases.map(p => `
+        <div class="phase">
+            <h5>${p.period} – ${p.title}</h5>
+            ${createList(p.content)}
+        </div>
+    `).join("");
+};
+
+fetchDetailWar();
